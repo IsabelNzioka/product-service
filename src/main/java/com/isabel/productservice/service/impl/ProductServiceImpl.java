@@ -48,7 +48,7 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public List<ProductCreateResponse> findAll() {
-       return productRepository.findAll().stream().map(this::mapToProductCreateResponse).toList();
+       return productRepository.findAll().stream().map(this::mapToProductCreateResponse).toList(); // data from the db
       }
 
     

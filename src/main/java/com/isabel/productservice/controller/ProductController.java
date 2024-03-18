@@ -43,8 +43,7 @@ public class ProductController {
     }
 
     @PostMapping
-    public GenericResponse<ProductCreateResponse> createProduct(
-            @RequestBody ProductCreateRequest productCreateRequest) {
+    public GenericResponse<ProductCreateResponse> createProduct(@RequestBody ProductCreateRequest productCreateRequest) {
                 log.info("We received : {}",productCreateRequest);
         ProductCreateResponse pr = productService.createProduct(productCreateRequest);
         GenericResponse<ProductCreateResponse> resp = GenericResponse.<ProductCreateResponse>builder()

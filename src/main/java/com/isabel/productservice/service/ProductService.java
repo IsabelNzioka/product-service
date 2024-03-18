@@ -7,7 +7,7 @@ import com.isabel.productservice.model.ProductCreateResponse;
 
 public interface ProductService {
   
-     ProductCreateResponse createProduct(ProductCreateRequest productCreateRequest);
+    ProductCreateResponse createProduct(ProductCreateRequest productCreateRequest);
 
     List<ProductCreateResponse> findAll();
 }

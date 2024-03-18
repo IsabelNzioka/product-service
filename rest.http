@@ -12,6 +12,9 @@ POST http://localhost:8080/api/products HTTP/1.1
 Content-Type:  application/json
 
 {
-    "name": "Laptop",
+    "name": "ASUS",
+    "warrant": "2 years", 
     "price": 300000
 }
+
+##warrant is ignored-not expected by the controller
