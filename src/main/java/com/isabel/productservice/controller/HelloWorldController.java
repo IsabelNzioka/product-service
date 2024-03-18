@@ -14,8 +14,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Slf4j
 public class HelloWorldController {
 
-    @GetMapping()
+    @GetMapping("/hello")
     public String getMethodName(@RequestParam(required=false) String param) {
+        log.info("Received params {}", param);
         return "Hello";
     }
     
